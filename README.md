@@ -1,2 +1,2 @@
-This is an evolving slide deck about the [Documenting the Now](http://docnow.io)
-project.
+Some slides about my in progress paper Bots, Seeds and People about
+appraisal in Web archives.
