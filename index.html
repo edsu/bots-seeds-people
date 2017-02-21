@@ -21,6 +21,7 @@
       }
       .citations {
         text-align: left;
+        font-size: 14pt;
       }
     </style>
     <script>
@@ -46,7 +47,6 @@
           <h2>Bots, Seeds and People</h2>
           <h3>Web Archives as Infrastructure</h3>
           <br>
-          <br>
           <p style="font-size: 18pt">
 
             Ed Summers<br>
@@ -59,9 +59,9 @@
             <a href="http://twitter.com/archivalflip">@archivalflip</a> / <a href="mailto:punzalan@umd.edu">punzalan@umd.edu</a>
             <br>
             <br>
-            <a href="http://bit.ly/bots-seeds-people">http://bit.ly/bots-seeds-people</a>
+            slides: <a href="http://bit.ly/bots-seeds-people">http://bit.ly/bots-seeds-people</a>
             <br>
-            <a href="https://arxiv.org/abs/1611.02493v1">https://arxiv.org/abs/1611.02493v1</a>
+            paper: <a href="https://arxiv.org/abs/1611.02493v1">https://arxiv.org/abs/1611.02493v1</a>
           </p>
         </section>
 
@@ -126,10 +126,9 @@
 
         <section data-background="images/envelope.jpg">
           How much of the web is archived?<br><br>
-          273,000,000,000 / 1,000,000,000,000 = .273
+          273,000,000,000 / 1,000,000,000,000 = .273 ???
           <br>
           <br>
-          <div class="fragment">?</div>
           <br>
           <p style="font-size: 14pt;">
           Alpert, J. and Hajaj, N. (2008). <a href="https://googleblog.blogspot.com/2008/07/we-knew-web-was-big.html">We knew the web was big...  </a> Google.<br>
@@ -191,6 +190,11 @@
           </p>
           <aside class="notes">
             <p>
+            I like this quote from Luciano Floridi who is at the Oxford Internet
+            Institute because it speaks to the rate at which our ability to
+            generate data is far outstripping our ability to store it. 
+            </p>
+            <p>
             According to IDC’s projections, the size of global storage
             capacity relative to the amount of data generated is expected
             to decline by half by 2020 (from 33% to 15%). Efficient use of
@@ -201,6 +205,10 @@
             the total GWP (Gross World Product) to store that year's data on
             Amazon S3.
             </p>
+            <p>
+            So we need to decide what to keep. And we need ways of thinking
+            about what to keep.
+            </p>
           </aside>
         </section>
 
@@ -209,11 +217,31 @@
           <h2>Appraisal</h2>
           <p>The process of identifying materials offered to an archives that
           have sufficient <em>value</em> to be accessioned.</p>
+          <br>
+          <br>
+          <br>
+          <p style="font-size: 14pt;">
+          <a href="http://www2.archivists.org/glossary/terms/a/appraisal">Appraisal</a> in <em>A Glossary of Archival and Records Terminology.</em> Society of American Archivists.
+          </p>
           </div>
+          <aside class="notes">
+            Fortunately archivists have been thinking about this problem for
+            well over a hundred years now and have developed a body of theory
+            around it called appraisal theory.
+          </aside>
         </section>
 
         <section>
-          RQ: How is appraisal being enacted in web archives?
+          <h2>
+          RQ: How is appraisal being enacted in <em>web</em> archives?
+          </h2>
+          <ul>
+            <li class="fragment">Determine how practices around archiving web
+              content can inform (or are informed by) archival theory.</li>
+            <li class="fragment">Add to our understanding of archival work 
+              and social memory as a sociotechnical system.</li>
+            <li class="fragment">Suggest opportunities for the (re)design of web archiving technologies.</li>
+          </ul>
           <aside class="notes">
             <p>It seemed like an interesting question given this unique
             socio-technical system comprised of bots, software systems,
@@ -225,99 +253,46 @@
             adequately answer this one.
             <ul>
               <li>How do technologies for web crawling and harvesting–seed lists and scopes–figure in their appraisal decisions?</li>
-              <li>Are there opportunities to design more useful sys- tems for the appraisal of content for Web archives?</li>
+              <li>Are there opportunities to design more useful systems for the appraisal of content for Web archives?</li>
             </ul>
           </aside>
         </section>
 
         <section>
-          <img title="Hilary Jenkinson" height=200 src="images/jenkinson.jpg">
-          <img title="Theodore Schellenberg"height=200 src="images/schellenberg.jpg">
-          <img title="Gerald Ham" height=200 src="images/ham.jpg">
-          <img title="Hans Booms" height=200 src="images/booms.jpg">
-          <br>
-          <img title="Terry Cook" height=200 src="images/cook.jpg">
-          <img title="Helen Samuels" height=200 src="images/samuels.jpg">
-          <img title="Verne Harris" height=200 src="images/harris.jpg">
+          <figure>
+            <img src="images/seedlist.png">
+            <figcaption>
+              An example of a seed list from <a href="https://archive-it.org">Archive-It</a>
+            </figcaption>
+          </figure>
           <aside class="notes">
-            Our most important and intellectually demanding task as 
-            archivists is to make an informed selection of information
-            that will provide the future with a representative record
-            of human experience in our time. But why must we do it so
-            badly? Is there any other field of information gathering
-            that has such a broad mandate with a selection process so
-            random, so fragmented, so uncoordinated, and even so often
-            accidental?
+            Say something about the seed list being a singular technical
+            artifact from the collaboration between the archivist, the
+            web archiving software, and the website being archived.
           </aside>
         </section>
 
         <section>
-          Mention Kitchin's framework, and use it as a backdrop for 
-          name dropping the various people...
-        </section>
-
-        <section>
-
-          <h2>Algorithms</h2>
-
+          <p>
+          <ul>
+            <li>Examinine pseudo-code/source code</li>
+            <li>Reflexively produce code</li>
+            <li>Reverse engineering</li>
+            <li>Interviews/Ethnography of the Coding Team</li>
+            <li>Unpack the socio-technical assemblage</li>
+            <li>Observe how algorithms do work in the world.</li>
+          </ul>
+          </p>
           <div class="citations">
-
-          <p>
-          <a href="https://twitter.com/RobKitchin">Rob Kitchin</a>. 2016. Thinking critically about and researching algorithms. <em>Information, Communication &amp; Society</em>: 1–16.
-          </p>
-
-          <p>
-          <a href="https://twitter.com/npseaver">Nick Seaver</a>. 2013. Knowing algorithms. <em>Media in Transition</em> 8: 1-12. </p>
-
-          <p>
-          <a href="https://twitter.com/staeiou">R. Stuart Geiger</a>. 2014. Bots, bespoke code, and the materiality of software platforms. <em>Information, Communication &amp; Society</em>: 
-          342-356.
-          </p>
-
+            Kitchin, R. (2016). Thinking critically about and researching algorithms. <em>Information, Communication &amp; Society,</em> 1–16.
           </div>
-
-        </section>
-
-        <section>
-
-          <h2>Infrastructure</h2>
-
-          <div class="citations">
-
-          <p>
-          <a href="http://www.davidribes.com/">David Ribes</a> and <a href="https://twitter.com/ducktopian">Charlotte P. Lee</a>. 2010.  Sociotechnical studies of cyberinfrastructure and e-research: Current themes and future trajectories. <em>Computer Supported Cooperative Work (CSCW)</em> 19, 3: 231–244.
-          </p>
-
-          <p>
-          <a href="https://twitter.com/ducktopian">Tarleton Gillespie</a>. 2010.  The politics of platforms. <em>New Media &amp; Society</em> 12, 3: 347–364.
-          </p>
-          </div>
-
-        </section>
-
-        <section>
-
-          <h2>Breakdown, Repair &amp; Work</h2>
-
-          <div class="citations">
-          <p>
-          <a href="https://sjackson.infosci.cornell.edu/">Steven J. Jackson</a>. 2014. Rethinking repair. In Media technologies: <em>Essays on communication, materiality and society</em>. MIT Press.
-          </p>
-
-          <p>
-          <a href="https://en.wikipedia.org/wiki/Susan_Leigh_Star">Susan Leigh Star</a>. 1999. The ethnography of infrastructure. <em>American Behavioral Scientist</em> 43, 3: 377-391.
-          </p>
-
-          <p>
-          <a href="https://en.wikipedia.org/wiki/Lucy_Suchman">Lucy Suchman</a>. Making work visible. <em>Communications of the ACM</em>, 38(9):56–64, 1995.
-          </p>
-          </div>
-
-        </section>
-        <section>
-          <img width="80%" src="images/seedlist.png">
           <aside class="notes">
-            Interested in examining the mundane details of the seedlist.
+            In his Towards Critical Data Studies Kitchin proposes the
+            notion of the data assemblage:
+            "data assemblages that encompasses all of the technological, 
+            political, social and economic apparatuses and elements that
+            constitutes and frames the generation, circulation and 
+            deployment of data."
           </aside>
         </section>
 
@@ -380,6 +355,25 @@
             <li><b>breakdown:</b> spreadsheets, forms, emails, DDoS</li>
             </div>
           </ul>
+        </section>
+
+        <section>
+          crawling / structures
+        </section>
+
+        <section>
+          social
+          time, money, people, collaboration
+        </section>
+
+        <section>
+          media
+          news, radio, rss, email, streams
+        </section>
+
+        <section>
+          breakdown
+          GWU harvesting leading to breakdown, and then communication.
         </section>
 
         <section>
