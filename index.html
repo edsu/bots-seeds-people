@@ -23,6 +23,10 @@
         text-align: left;
         font-size: 14pt;
       }
+      .reveal sup { 
+        font-size: 14pt;
+        vertical-align: super;
+      }
     </style>
     <script>
       var link = document.createElement( 'link' );
@@ -63,6 +67,13 @@
             <br>
             paper: <a href="https://arxiv.org/abs/1611.02493v1">https://arxiv.org/abs/1611.02493v1</a>
           </p>
+          <aside class="notes">
+            I'm going to try to do two things in this talk: the first is to
+            simply describe the study we performed and our results, but I'm 
+            also trying to see if other CSCW researchers are interested in 
+            studying web archives so please come up to me later here or at 
+            the conference if any of this sounds interesting.
+          </aside>
         </section>
 
         <section>
@@ -76,18 +87,22 @@
           </ul>
         </section>
 
-         <section>
-           <p>
-            The hard drive of the world is not big enough.<br>
-            <br>
-            <a href="https://www.youtube.com/watch?v=HEvyHf7xJa0&feature=youtu.be&t=10m38s">Luciano Floridi</a>
+        <section data-background="images/envelope.jpg">
+          How much of the web is in the Internet Archive?<br><br>
+          273,000,000,000 <sup>1</sup> / 1,000,000,000,000 <sup>2</sup> = .273 ???
+          <br>
+          <br>
+          <br>
+          <p style="font-size: 14pt; text-align: left; margin-left: 15%; margin-right: 15%;">
+          1. Alpert, J. and Hajaj, N. (2008). <a href="https://googleblog.blogspot.com/2008/07/we-knew-web-was-big.html">We knew the web was big...  </a> Google.<br>
+          2. Goel, V. (2016). <a href="https://blog.archive.org/2016/10/23/defining-web-pages-web-sites-and-web-captures/">Defining Web pages, Web sites and Web captures</a>. Internet Archive.<br>
           </p>
           <aside class="notes">
-            <p>
-            I like this quote from Luciano Floridi who is at the Oxford Internet
-            Institute because it speaks to the rate at which our ability to
-            generate data is far outstripping our ability to store it. 
-            </p>
+            <ul>
+              <li>510 billion objects or web captures.</li>
+              <li>361 million websites</li>
+              <li>15 petabytes of storage</li>
+            </ul>
             <p>
             According to International Data Corporation (IDC)'s projections,
             the size of global storage capacity relative to the amount of
@@ -96,102 +111,18 @@
             crucial.
             </p>
             <p>
-            David Rosenthal has predicted that by 2018 it will cost more than
-            the total GWP (Gross World Product) to store that year's data on
-            Amazon S3.
+            David Rosenthal of Stanford University has predicted that by 
+            2018 it will cost more than the total GWP (Gross World Product) 
+            to store that year's data on Amazon S3.
             </p>
-            <p>
-            So we need to decide what to keep. And we need ways of thinking
-            about what to keep.
-            </p>
-            <p>
           </aside>
         </section>
 
         <section>
-          <figure>
-            <img src="images/mh17.jpg">
-            <figcaption>
-              <a href="https://commons.wikimedia.org/wiki/File:Boeing_777-2H6ER_9M-MRD_Malaysian_(6658105143).jpg">9M-MRD or MH17, photographed in October 2011</a>
-            </figcaption>
-            <aside class="notes">
-              On Thursday, 17 July 2014, Malaysia Airlines Flight 17 departed
-              from Amsterdam Airport 10:13 UTC and was due to arrive at Kuala 
-              Lumpur International Airport in Malaysia at 22:00.
-            </aside>
-          </figure>
-        </section>
-
-        <section>
-          <figure>
-          <img src="images/crash.jpg">
-          <figcaption>
-            <a href="https://www.nrc.nl/nieuws/2015/10/13/de-mh17-ramp-door-de-ogen-van-fotograaf-pierre-crom-a1464085">The MH17 disaster through the eyes of photographer Pierre Crom</a>
-          </figcaption>
-          <aside class="notes">
-            At 13:20 MH17 crashed outside Hrabove, near Torez in eastern 
-            Ukraine.
-          </aside>
-        </section>
-
-        <section>
-          <figure>
-            <img src="images/strelkov.jpg">
-            <figcaption>
-              <a href="https://en.wikipedia.org/wiki/Igor_Strelkov_(officer)">Igor Strelkov</a>
-            </figcaption>
-            <aside class="notes">
-              Igor Strelkov is a self described Russian nationalist, and 
-              former colonel in Russian military intelligence, who has 
-              been charged by Ukranian authorities with terrorism.  He 
-              is currently being sued by the families of 18 passengers 
-              on the MH17 because forces under his command are allegedly 
-              responsible for shooting it down.
-            </aside>
-        </section>
-
-        <section> <figure>
-          <img style="height: 50%" src="images/vk.png">
-          <figcaption>
-            "We just downed a plane, an AN-26."<br>
-          </figcaption>
-          <aside class="notes">
-            The only reason why we know that he was involved is because 
-            he bragged about shooting down the plane (which he thought
-            was a military aircraft) on the Russian social networking
-            site VKontakte.
-          </aside>
-        </section>
-
-        <section data-background="images/ia.jpg">
-          <a style="color: white; font-size: 20pt;" href="http://web.archive.org/web/20140717155720/https://vk.com/wall-57424472_7256">http://web.archive.org/web/20140717155720/https://vk.com/wall-57424472_7256</a>
-        </section>
-
-        <section data-background="images/envelope.jpg">
-          How much of the web is in the Internet Archive?<br><br>
-          273,000,000,000 / 1,000,000,000,000 = .273 ???
-          <br>
-          <br>
-          <br>
-          <p style="font-size: 14pt;">
-          Alpert, J. and Hajaj, N. (2008). <a href="https://googleblog.blogspot.com/2008/07/we-knew-web-was-big.html">We knew the web was big...  </a> Google.<br>
-          <br>
-          <br>Goel, V. (2016). <a href="https://blog.archive.org/2016/10/23/defining-web-pages-web-sites-and-web-captures/">Defining Web pages, Web sites and Web captures</a>. Internet Archive.<br>
-          </p>
-          <aside class="notes">
-            <ul>
-              <li>510 billion objects or web captures.</li>
-              <li>361 million websites</li>
-              <li>15 petabytes of storage</li>
-            </ul>
-          </aside>
-        </section>
-
-       <section>
           <figure>
             <img alt="NYTimes" src="images/wayback2.png">
             <figcaption>
-              Archival coverage of the NYTimes homepage in 2016.
+              <a href="https://web.archive.org/web/20160601000000*/https://nytimes.com">Archival coverage</a> of the NYTimes homepage in 2016.
             </figcaption>
             <aside class="notes">
               The Internet Archive uses automated agents, spiders or
@@ -201,29 +132,36 @@
               of the homepage itself.
             </aside>
           </figure>
-        </section>
+				</section>
 
         <section>
           <figure>
             <img alt="VK" src="images/wayback.png">
             <figcaption>
-              Archival coverage of Igor Strelkov's VK profile in 2014.
+              <a href="http://web.archive.org/web/20140501000000*/https://vk.com/wall-57424472_7256">Archival coverage</a> of Igor Strelkov's VKontakte profile in 2014.
             </figcaption>
           </figure>
           <aside class="notes">
+            This is the coverage for Igor Strelkov's profile page on VKontakte
+            which is a popular Russian social media site. Strelkov is
+            currently being sued by the families of 18 passengers on MH17
+            because he gave the order to shoot down the civilian aircraft
+            thinking it was a Ukrainian military plane. We only know
+            of his role because he posted on VKontakte about shooting down the
+            aircraft, but deleted his post and his account on learning that it
+            was in fact a civilian aircraft.
+
             Anatol Shmelev is a research fellow, curator of the Russia and
             Eurasia Collection, and the project archivist for the Radio Free
             Europe/Radio Liberty Collection, at the Hoover Institution. 
-            In mid-July Anatol added this webpage to a list of URLs to be
-            routinely crawled by Archive-It to become par of a Ukrainian 
-            Conflict collection.
+            In mid-July you can that Anatol added this webpage to a list of 
+            URLs to be routinely crawled by Archive-It to become par of a 
+            Ukrainian Conflict collection.
 
             Archive-It: 400 partner organizations in 48 U.S. states
-            and 16 countries worldwide. One of which is UMD. iSchool
-            PhD student Amy Wickner can tell you more if you are
-            interested.
+            and 16 countries worldwide.
           </aside>
-        </section>
+				</section>
 
         <section style="text-align: center;">
           <div style="text-align: left; width: 70%; margin-left: 15%;">
@@ -231,43 +169,25 @@
           <p>The process of identifying materials offered to an archives that
           have sufficient <em>value</em> to be accessioned.</p>
           <br>
-          <br>
-          <br>
           <p style="font-size: 14pt;">
           <a href="http://www2.archivists.org/glossary/terms/a/appraisal">Appraisal</a> in <em>A Glossary of Archival and Records Terminology.</em> Society of American Archivists.
           </p>
           </div>
           <aside class="notes">
-            Fortunately archivists have been thinking about this problem for
-            well over a hundred years now and have developed a body of theory
-            around it called appraisal theory.
-          </aside>
-        </section>
-
-        <section>
-          <h2>
-          RQ: How is appraisal being enacted in <em>web</em> archives?
-          </h2>
-          <ul>
-            <li class="fragment">Determine how practices around archiving web
-              content can inform (or are informed by) archival theory.</li>
-            <li class="fragment">Add to our understanding of archival work 
-              and social memory as a sociotechnical system.</li>
-            <li class="fragment">Suggest opportunities for the (re)design of web archiving technologies.</li>
-          </ul>
-          <aside class="notes">
-            <p>It seemed like an interesting question given this unique
-            socio-technical system comprised of bots, software systems,
-            algorithms, archivists, and organizations. And one that has a 
-            lot of CSCW shape to it.</p>
-
-            We had started with two additional research questions but 
-            realized during the review process that we really only 
-            adequately answer this one.
-            <ul>
-              <li>How do technologies for web crawling and harvesting–seed lists and scopes–figure in their appraisal decisions?</li>
-              <li>Are there opportunities to design more useful systems for the appraisal of content for Web archives?</li>
-            </ul>
+            <p>
+            For over a hundred years Archivists have developed appraisal theory
+            which provides practical guidance on the selection of material for 
+            archives. Appraisal theories have often been pragmatic in nature, 
+            because they are anchored in the contingencies of printing and 
+            publishing technologies available at the time.
+            </p>
+            <p>
+            As we just saw in previous examples these theories are now being 
+            adapted to the web environment. Some appraisal decisions are enacted
+            by archivists making selection decisions, and others are being
+            inscribed in software (as in the case of the NYTimes) and attached
+            to external data flows.
+            </p>
           </aside>
         </section>
 
@@ -279,9 +199,36 @@
             </figcaption>
           </figure>
           <aside class="notes">
-            Say something about the seed list being a singular technical
-            artifact from the collaboration between the archivist, the
-            web archiving software, and the website being archived.
+            <p>
+            The seed list is a singular technical artifact in the appraisal
+            of web content since it provides a list of resources to be 
+            archived by software agents responsible for fetching and saving 
+            the content. Sometimes archivists put URLs on these lists, and
+            sometimes other software puts URLs on them.
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>
+          RQ: How is appraisal being enacted in <em>web</em> archives?
+          </h2>
+          <ul>
+            <li class="fragment">Selection strategies in web archiving</li>
+            <li class="fragment">Socio-technical factors that influence
+              selection practices</li>
+          </ul>
+          <aside class="notes">
+            <p>
+            This leads me to our research question of how appraisal is
+            being enacted in web archives. Currently the process is a
+            blackbox. The collaboration between human and automated agents 
+            forms a socio-technical system. We wanted to unlock the dynamic
+            in order to inform selection strategies in web archiving, and
+            also to better understand the sociotechnical environment of 
+            web archiving, to hopefully inform the design and implementation
+            of such systems.
+            </p>
           </aside>
         </section>
 
@@ -290,26 +237,27 @@
             Kitchin, R. (2016). Thinking critically about and researching algorithms. <em>Information, Communication &amp; Society,</em> 1–16.
           </div>
           <br>
-          <ul>
-            <li>Code: software studies, reverse engineering</li>
-            <li>Designers: interviews, ethnographies </li>
-            <li style="color: red">Socio-technical environment: ethnographies</li>
-            <li>The World: governance, politics, markets, philosophy</li>
-          </ul>
+          <ol>
+            <li>Source Code</li>
+            <li>Reflexively producing code</li>
+            <li>Reverse engineering</li>
+            <li>Design &amp; designers</li>
+            <li style="color: red;">Socio-technical assemblage</li>
+            <li style="color: red;">The world</li>
+          </ol>
           </p>
           <aside class="notes">
             <p>
-            Draws on the work of Nick Seaver, Tarleton Gillespie, Andrew
-            Galloway to propose a research framework for the study of
-            algorithmic systems.
-            </p>
-            <p>
-            In his Towards Critical Data Studies Kitchin proposes the
-            notion of the data assemblage:
-            "data assemblages that encompasses all of the technological, 
-            political, social and economic apparatuses and elements that
-            constitutes and frames the generation, circulation and 
-            deployment of data."
+            One important touchstone in our research is Rob Kitchin's
+            framework for thinking crtitical thinking about algorithms. He 
+            synthesizes much of the work being done in algorithm studies by 
+            folks like Nick Diakopoulos, Stuart Geiger, Nick Seaver, 
+            Tarleton Gillespie, Andrew Galloway and others to identify 
+            various levels at which you can study algorithmic systems, and
+            methodologies for studying them. In our study we were particularly
+            interested in the socio-technical assemblage of web archiving, and
+            how it is being used by archivists for which Kitchin suggests
+            ethnography and interviews as useful.
             </p>
           </aside>
         </section>
@@ -321,13 +269,12 @@
             <li class="fragment">33 responded</li>
             <li class="fragment">28 interviewed</li>
             <li class="fragment">female (13) / male (15)</li>
-            <li class="fragment">university, non-profit, library/museum, .gov, </li>
+            <li class="fragment">university, non-profit, library/museum</li>
             <li class="fragment">archivists, developers, researchers</li>
             <li class="fragment">semi-structured interviews</li>
             <li class="fragment"><img class="plain" width="150" src="images/skype.jpg"></li>
-            <li class="fragment">memoing</li>
-            <li class="fragment">field notes</li>
-            <li class="fragment">coding</li>
+            <li class="fragment">memoing + field notes</li>
+            <li class="fragment">coding / thematic analysis</li>
           </ul>
           <aside class="notes">
             <p>
@@ -344,65 +291,185 @@
               framework, it was guided by our own interest in appraisal
               theory as a sociotechnical system that entangles the archivist
               with the material of the web and automated agents. 
-              I will now describe these these themes
+              I will now describe these these themes:
             </p>
           </aside>
         </section>
 
         <section>
-          <h2>Findings</h2>
+          <h3>Findings</h3>
+          <img class="stretch" src="images/sociotechnical.png">
+          <aside class="notes">
+            During coding and analysis of our field notes we were able to 
+            extract six general themes. The themes were interconnected and 
+            interdependent, and fell into roughly two groups, the social and 
+            the technical which you see pictured here in different colors. 
+            They gave us a picture of the socio-technical environment of 
+            appraisal in web archives.</p>
+            <p>
+            The picture is a bit of a tangled
+            hairball, but this speaks to what Kitchin calls the data 
+            assemblage: "that encompasses all of the technological, 
+            political, social and economic apparatuses and elements that 
+            constitutes and frames the generation, circulation and 
+            deployment of data." in this case, web archive data.
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Technical</h3>
+          <img style="float: left;" src="images/technical.png">
+          <div style="font-size: 24pt">
+          <b>Crawl Modalities</b><br>
+          domains, websites, topics, events, documents<br>
+          <br>
+          <b>Information Structures</b> <br>
+          hierarchies, networks, streams<br>
+          <br>
+          <b>Tools</b><br>
+          services, storage systems, open source utilities, spreadsheets, 
+          forms, email, issue trackers
+          </div>
+          <aside class="notes">
+            <p>
+            First I will take a look at the technical themes.
+            </p>
+            <p>We see them
+            grouped here. Crawl modalities refers to the selection 
+            strategies implemented in web archiving tools and chosen by 
+            archivists in their work. 
+            </p>
+            <p>
+            Information structures refers to specific formations of web 
+            content that archivists interacted with using their tools. 
+            </p>
+            <p>
+            And tools refers to the specic tools that they used to carry
+            out the process of selection. 
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Social</h3>
+          <img style="float: left;" src="images/socio.png">
+          <div style="font-size: 24pt;"> 
+            <b>Money</b><br>
+            grants, subscriptions, infrastructure<br>
+            <br>
+            <b>Time</b><br>
+            limits, scheduling, always-on, reading, reviewing<br>
+            <br>
+            <b>People</b><br>
+            teams, lone-arrangers, developers, collaborations
+          </div>
+          <aside class="notes">
+            <p>Our interviews also uncovered some expected grouping
+            of social entities that were involved in the selection 
+            of web content for archiving</p>
+            <p>The first obvious one are people: who sometimes were teams
+            (managers, field archivists and technicians), other times
+            individuals working by themselves (lone arrangers), developers
+            contributing to opensource projects and volunteer organizations
+            such as ArchiveTeam. There were also organizational collaborations
+            such as the IIPC that provided a setting for web archiving to take
+            place.</p>
+            <p>In our paper we lumped time and money together, but I've 
+            separated them here in the diagram because they really are 
+            different. They were interesting because of the way they abstract,
+            commensurate and make appraisal decisions legible.</p>
+            <p>Time was made manifest in schedules for how often to 
+            archive particular sites, how long to perform a particular crawl
+            operations, how quickly archival captures needed to be performed.</p>
+            <p>
+            Money or financial resources were often mentioned in terms
+            of grant money from foundations and agencies for building 
+            collections, subscription fees for services, and the relationship
+            between money and storage.
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Breakdown &amp; Repair</h3>
+          <img class="stretch" src="images/sociotechnical.png">
+          <aside class="notes">
+            <p>
+            Breakdown and repair are another theme that emerged during our 
+            analysis, which can be seen in the many tangled connections in 
+            the diagram. I'm thinking of work in infrastructure studies where 
+            breakdown is used as a way to identify relationships in otherwise
+            boring, mundane and consequently invisible systems (Star). And by
+            repair I'm invoking some of the recent work by Steven Jackson
+            who identifies sites of breakdown as opportunities for repair and
+            more importantly design and innovation.
+            </p>
+            <p>
+            Breakdowns between People and Tools could be seen in the use of 
+            external tools such as email, spreadsheets, forms to provide
+            missing features such as documenting provenance for 
+            communication and collaboration in web archiving tools. 
+            </p>
+            <p>
+            Breakdowns in the relationship between crawling modalities and
+            information structures could be seen in topical collections. 
+            For example a collaborative focus on Fracking by 
+            archivists in NY and PA, were problematized when corporations 
+            extended across state boundaries and internationally. Where should
+            the scope of collection end? The archivists improvised
+            communication tools to track selection.
+            </p>
+            <p>
+            There were also breakdowns in legibility where archivists were not
+            able to beforehand determine the extent of websites, and used test
+            crawls in Archive-It to try to determine the size of websites by
+            crawling for a period of time and examining how many URLs were 
+            left uncrawled using host reports. They adjusted scoping rules
+            in order to eliminate redundant content or deep wells of data that
+            they weren't adequately funded to collect.
+            </p>
+            <p>
+            Breakdown and repair is fundamental to the archival enteprirse 
+            which is ultimately an ongoing process of repairing documentary
+            breakdowns, in order to shape our knowldge of the past, and 
+            social memory.
+            </p>
+          </aside>
+        </section>
+
+        <section>
+          <h3>Future Work</h3>
+          <div class="citations">
+            Kitchin, R. (2016). Thinking critically about and researching algorithms. <em>Information, Communication &amp; Society,</em> 1–16.
+          </div>
+          <br>
+          <ol>
+            <li style="color: red;">Source Code</li>
+            <li style="color: red;">Reflexively producing code</li>
+            <li style="color: red;">Reverse engineering</li>
+            <li style="color: red;">Design &amp; designers</li>
+            <li>Socio-technical assemblage</li>
+            <li>The world</li>
+          </ol>
+          </p>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h1>Thanks!</h1>
+        </section>
+
+        <section>
+          <h1>Extras</h1>
           <ul>
-            <li><b>crawling:</b> domains, websites, events, topics</li>
-            <li><b>structures:</b> hierarchies, networks, streams, items</li>
-            <li><b>resources:</b> time, money</li>
-            <li><b>people:</b> roles, staffing, change, politics</li>
-            <li><b>collaboration:</b> organizations, outreach</li>
-            <div style="color: red" class="fragment">
-            <li><b>currency:</b> news, radio, rss, email</b></li>
-            <li><b>breakdown:</b> spreadsheets, forms, emails, DDoS</li>
-            </div>
-          </ul>
+            <li><a href="codebook.pdf">Codebook</a></li>
+            <li><a href="questions.pdf">Interview Questions</a></li>
         </section>
 
         <section>
-          <h3>Crawl Modalities</h3>
-          <ul>
-            <li>domains: <em>umd.edu</em></li>
-            <li>websites: <em>mith.umd.edu</em></li>
-            <li>topics: <em>Fracking</em></li>
-            <li>events: <em>Deepwater Horizon Oil Spill</em></li>
-            <li>documents: <em>Student Handbook</em></li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Information Structures</h3>
-          <ul>
-            <li>hierarchies</li>
-            <li>networks</li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-
-        <section>
-          social
-          time, money, people, collaboration
-        </section>
-
-        <section>
-          media
-          news, radio, rss, email, streams
-        </section>
-
-        <section>
-          breakdown
-          GWU harvesting leading to breakdown, and then communication.
-        </section>
-
-        <section>
-          future work?
+          quotes
         </section>
 
       </div>
